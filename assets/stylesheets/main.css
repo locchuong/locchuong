@@ -1,0 +1,22 @@
+/*16 */
+.social {
+    position: absolute;
+    top: 1px;
+    right: 85px;
+}
+.social-git{
+    position: absolute;
+    top: 4px;
+    right: 30px;
+}
+
+.social-margin {
+    margin-top: 11rem
+}
+
+.display-contact {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  /*<a href="https://github.com/locchuong/Marching-Squares" class="btn btn-info mt-auto">Visit Repository</a>*/

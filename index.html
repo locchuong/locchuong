@@ -1,20 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</head>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
-
-  <body>
-    <h1> My Portfolio</h1>
+<body>
 
 
-  </body>
+  <header class="container-fluid p-3 border my-5 text-light bg-dark">
+    <p class="display-1 ">My Portfolio</p>
+  </header>
+
+  <div class="social">
+    <p class="d-inline mx-2 display-contact"> Contact Me @ </p>
+  </div>
+  <a class="d-inline social-git" href="https://github.com/locchuong"><img src="assets/media/github.png" width="38"></img></a>
+
+  <div class="container-fluid">
+    <!--Row 1-->
+    <p class="display-3 mx-5"> Projects</p>
+    <div class="row top-buffer mx-4">
+      <!--Column-1-->
+      <div class="col-sm p-0 my-2">
+        <div class="card bg-secondary text-light mx-4" style="width: 18rem;height: 40rem;">
+          <img class="card-img-top" src="assets/media/3d-terrain-gen.PNG" alt="Card image cap">
+          <div class="card-body">
+            <a href="https://locchuong.github.io/3D-Terrain-Generaton/" class="text-light h5">3D Terrain Generation</a>
+            <p class="card-text">A moving 3D Terrain Generation using JavaScript library p5.js's Perlin Noise Function.
+              Includes a slider to change the Perlin Noise's x and y offset values.</p>
+          </div>
+          <div class="card-footer">
+            
+
+            <a href="https://locchuong.github.io/3D-Terrain-Generaton/" class="btn btn-info">See Live</a>
+            <a href="https://github.com/locchuong/3D-Terrain-Generaton" class="btn btn-info">Visit Repository</a>
+            <pre class="d-inline mt-3 float-right text-light font-italic">Languages: JavaScript, HTML, CSS</pre>
+          </div>
+        </div>
+      </div>
+      <!--Column-2-->
+      <div class="col-sm p-0 my-2">
+        <div class="card bg-secondary text-light mx-4" style="width: 18rem;height: 40rem;">
+          <img class="card-img-top" src="assets/media/marching-squares.png" alt="Card image cap">
+          <div class="card-body">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="text-light h5">Marching Squares</a>
+            <p class="card-text">A computer graphics algorithm that generates contours for a rectangular array. Uses OpenSimplexNoise and JavaScript library's p5.js linear interpolation to create a smooth effect.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="btn btn-info">See Live</a>
+            <a href="https://github.com/locchuong/Marching-Squares" class="btn btn-info">Visit Repository</a>
+            <pre class="d-inline mt-3 float-right text-light font-italic">Languages: JavaScript, HTML, CSS</pre>
+          </div>
+        </div>
+      </div>
+      <!--Column-3-->
+      <div class="col-sm p-0 my-2">
+        <div class="card bg-secondary text-light mx-4" style="width: 18rem;height: 40rem;">
+          <img class="card-img-top" src="assets/media/game-of-life.png" alt="Card image cap">
+          <div class="card-body">
+            <a href="https://locchuong.github.io/Game-of-Life/" class="text-light h5">Game Of Life</a>
+            <p class="card-text">A cellular automaton made by British mathematician John Horton Conway. It is a zero-player game determined by its initial state requiring no further input from the user. Made using JavaScript library p5.js.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://locchuong.github.io/Game-of-Life/" class="btn btn-info">See Live</a>
+            <a href="https://github.com/locchuong/Game-of-Life" class="btn btn-info">Visit Repository</a>
+            <pre class="d-inline mt-3 float-right text-light font-italic">Languages: JavaScript, HTML, CSS</pre>
+          </div>
+        </div>
+      </div>
+      <!--Column-4-->
+      <div class="col-sm p-0 my-2">
+        <div class="card bg-secondary text-light mx-4" style="width: 18rem;height: 40rem;">
+          <img class="card-img-top" src="assets/media/marching-squares.png" alt="Card image cap">
+          <div class="card-body">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="text-light h5">Project-4</a>
+            <p class="card-text">Coming Soon!</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="btn btn-info">See Live</a>
+            <a href="https://github.com/locchuong/Marching-Squares" class="btn btn-info">Visit Repository</a>
+            <pre class="d-inline mt-3 float-right text-light font-italic">Languages: JavaScript, HTML, CSS</pre>
+          </div>
+        </div>
+      </div>
+      <!--Column-5-->
+      <div class="col-sm p-0 my-2">
+        <div class="card bg-secondary text-light mx-4" style="width: 18rem;height: 40rem;">
+          <img class="card-img-top" src="assets/media/marching-squares.png" alt="Card image cap">
+          <div class="card-body">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="text-light h5">Project-5</a>
+            <p class="card-text">Coming Soon!</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://locchuong.github.io/Marching-Squares/" class="btn btn-info">See Live</a>
+            <a href="https://github.com/locchuong/Marching-Squares" class="btn btn-info">Visit Repository</a>
+            <pre class="d-inline mt-3 float-right text-light font-italic">Languages: JavaScript, HTML, CSS</pre>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<footer></footer>
+</body>
+
 </html>
